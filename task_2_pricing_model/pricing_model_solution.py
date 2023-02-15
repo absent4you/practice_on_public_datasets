@@ -165,8 +165,8 @@ print(f'Best number of clusters per places is {kl.elbow}')
 kmeans = KMeans(n_clusters=kl.elbow)
 kmeans.fit(X)
 place_table['label_place'] = kmeans.labels_
-place_table = place_table.drop(['id'], axis=1)
 place_cluster_description = place_table.groupby(by='label_place').mean()
+place_cluster_description = place_cluster_description.drop(['id'], axis=1)
 place_cluster_description = place_cluster_description.join(place_table['label_place'].value_counts())
 place_cluster_description.to_csv('outputs/place_clusters.csv')
 
