@@ -5,5 +5,5 @@ To execute the codes and reproduce experiments/results clone the repo and run th
 
 To execute pricing_model_solution.py, first, unzip the data in the folder practice_on_public_datasets/task_2_pricing_model/data/. In Linux you can use the following commandas:
 * cd **your/path**/practice_on_public_datasets/task_2_pricing_model/data/
-* gzip -dk calendar.csv.gz
-* gzip -dk listings.csv.gz
+* gzip -d calendar.csv.gz
+* gzip -d listings.csv.gz
